@@ -1,0 +1,10 @@
+[flake8]
+max-line-length = 88
+extend-ignore = E203, W503
+exclude =
+    .git,
+    __pycache__,
+    .pytest_cache
+per-file-ignores =
+    gradeguard/gradeguard.py: F401, F403, F405, E501
+    tests/test_gradeguard.py: F401, F403, F405, E702, E305, E401, E402, E501

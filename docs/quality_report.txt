@@ -1,0 +1,54 @@
+================================================================================
+GRADEGUARD CODE QUALITY & SECURITY REPORT
+================================================================================
+Generated on: 2026-10-30
+Python Version: 3.14.6
+Tools: flake8 7.5.0, bandit 1.9.4
+
+--------------------------------------------------------------------------------
+1. FLAKE8 STATIC ANALYSIS REPORT
+--------------------------------------------------------------------------------
+Command: flake8 gradeguard tests
+Result: PASSED (0 errors, 0 warnings)
+
+All modules under gradeguard/ and tests/ conform to PEP 8 standards with a maximum
+line length of 88 characters.
+
+--------------------------------------------------------------------------------
+2. BANDIT SECURITY SCAN REPORT
+--------------------------------------------------------------------------------
+Command: bandit -r gradeguard
+
+[main]	INFO	profile include tests: None
+[main]	INFO	profile exclude tests: None
+[main]	INFO	cli include tests: None
+[main]	INFO	cli exclude tests: None
+[main]	INFO	running on Python 3.14.6
+Run started: 2026-10-30 11:43:37+00:00
+
+Test results:
+	No issues identified.
+
+Code scanned:
+	Total lines of code: 1275
+	Total lines skipped (#nosec): 0
+	Total potential issues skipped due to specifically being disabled: 0
+
+Run metrics:
+	Total issues (by severity):
+		Undefined: 0
+		Low: 0
+		Medium: 0
+		High: 0
+	Total issues (by confidence):
+		Undefined: 0
+		Low: 0
+		Medium: 0
+		High: 0
+Files skipped (0):
+
+================================================================================
+SUMMARY:
+- Static analysis (flake8): Clean pass, 0 violations.
+- Security vulnerability scan (bandit): Clean pass, 0 vulnerabilities detected.
+================================================================================
